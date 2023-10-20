@@ -3,6 +3,52 @@
     margin: 0;
     padding: 0;
     font-family: 'Inria Sans', sans-serif;
+} 
+:root {
+
+
+    --plano-fundo: #FFF;
+    --color: #000;
+    --border-color: #E4E4E4;
+    --logo: url(css/imagens/logo.png);
+
+}
+
+.escuro {
+
+    --plano-fundo: #1C1C1C;
+    --color: #FFF;
+    --border-color: #E4E4E4;
+    --logo: url(css/imagens/logo2.png);
+
+
+}
+
+body {
+
+    background-color: var(--plano-fundo);
+
+}
+
+#desktop_menu {
+
+    display:none;
+
+}
+
+
+#mudar_tema {
+
+    margin-left: 47%;
+    padding-top: 4px;
+
+}
+
+#mudar_tema span{
+
+    font-size: 30px;
+    
+
 }
 
 
@@ -51,8 +97,17 @@ header {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid #E1CACA;
+    border-color: var(--border-color);
     position: relative;
 
+}
+
+.logo {
+
+    background-image: var(--logo);
+    width:10px;
+    height:10px;
+    
 }
 
 #menu_bar a:hover {
@@ -124,6 +179,7 @@ header button {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    background-color: var(--plano-fundo);
 
 }
 
@@ -143,6 +199,7 @@ header button {
     align-items: center;
     flex-direction: column;
     border: 1px solid #E4E4E4;
+    border-color: var(--border-color);
     margin: 0% 5% 0% 5%;
     border-radius: 10px;
 
@@ -174,6 +231,7 @@ header button {
 .introducao_container h1 {
 
     font-size: 20px;
+    color: var(--color);
   
 
 }
@@ -181,6 +239,7 @@ header button {
 .introducao_1 h4 {
 
     margin:1px;
+    color: var(--color);
 
 }
 
@@ -189,13 +248,14 @@ header button {
 
     font-size: 15px;
     margin:1px;
+    color: var(--color);
 
 }
 
 .introducao_2 {
 
-    background-color: #272727;
-    color: #FFF;
+    background-color: var(--color);
+    color: var(--plano-fundo);
     margin: 7% 5%;
     border-radius: 10px;
     padding: 5%
@@ -222,12 +282,14 @@ header button {
 .introducao_3 p {
 
     padding: 6%;
+    color: var(--color);
 
 }
 
 .introducao_3 h1 {
 
     font-size: 26px;
+    color: var(--color);
 
 }
 
@@ -297,8 +359,9 @@ footer {
 footer p {
 
     font-size: 12px;
-    color: #000;
+    color: var(--color);
     font-weight: bold;
+
 
 }
 
@@ -317,14 +380,7 @@ footer p {
    
    #menu_bar {
    
-       display: block;
-       background-color: white;
-       display: flex;
-       align-items: center;
-       flex-direction: row;
-       height: 100%;
-       width: 100%;
-       padding-right: 45px;
+       display: none;
    
    }
 
@@ -349,6 +405,34 @@ footer p {
     flex-direction: row;
     padding-right: 65%;
     position: relative;
+
+   }
+
+   #desktop_menu {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 35%;
+  
+    
+   }
+
+   #desktop_menu li {
+
+    list-style: none;
+
+   }
+
+   #desktop_menu a {
+
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    padding-right: 35px
+    
 
    }
 
@@ -384,11 +468,11 @@ footer p {
 .introducao_1 {
 
     margin-top: 20px;
-    padding: 70px 75px;
+    padding: 70px 60px;
     margin: 25px;
     position: relative;
     height: 100%;
-    width: 100%;
+    width: 1685px;
 
 }
 
@@ -398,7 +482,7 @@ footer p {
     width: 397px;
     position: absolute;
     right: 0.5px;
-    margin-right: 25%;
+    margin-right: 15%;
     margin-bottom: 4.1%;
 }
 
@@ -421,7 +505,7 @@ footer p {
 
     font-size: 24px;
     padding-bottom: 25px;
-    margin-right: 10.5%;
+    margin-right: 9%;
 
 }
 
@@ -436,7 +520,7 @@ footer p {
 
     margin-top: 25px;
     font-size: 20px;
-    padding: 20px
+    padding: 20px;
 
 }
 
@@ -505,17 +589,16 @@ footer p {
     width: 85%;
     border-radius: 10px;
     
-
 }
 
 .botao_bonito p {
 
     position: absolute;
     top: 1px;
-    padding-top: 12%;
+    padding-top: 11%;
     color: #FFF;
     font-weight: BOLD;
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
@@ -530,6 +613,27 @@ footer p {
     font-size: 13px;
 
 }
+
+#desktop_menu a {
+
+    color: var(--color);
+
+}
+
+#mudar_tema {
+
+    margin-left: 140%;
+    padding-top: 17px;
+
+}
+
+#mudar_tema span{
+
+    font-size: 40px;
+    
+
+}
+
 
 
 
